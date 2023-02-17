@@ -36,8 +36,7 @@ html {
     display: flex;
     flex-direction: column;
     background-color: #fdf8e3;
-    border-radius: 100px;
-    
+    border-radius: 100px;    
 }
 
 .status-bar-container {
@@ -54,7 +53,6 @@ html {
 p {
     margin: .5em;
     text-align: center;
-
 }
 
 .status-bar {
@@ -62,26 +60,43 @@ p {
     flex-direction: row;
     height: 50px;
     width: 100%;
-    justify-content: space-between;
-
-    
+    justify-content: space-between;    
 }
 
 .status-cellular {
     width: 50px;
     object-fit: contain;
-
 }
 .status-location {
     width: 30px;
     object-fit: contain;
 }
 
-
 .title {
     text-align: center;
     font-size: 50px;
+    margin-bottom: .5em;
 }
+
+.app_text {
+    margin: 0;
+}
+
+.app_img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: minmax(100px, auto);
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
 @keyframes nook {
     from {
         background-position: 0% 0%;
